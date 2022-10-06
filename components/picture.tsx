@@ -25,7 +25,7 @@ const Picture: FC<PictureProps> = ({
     return `${src}/${width.toString()}x${height.toString()}.png?text=${width.toString()}x${height.toString()}`;
   };
 
-  const getStyles = (): React.CSSProperties => {
+  const getStyles = (...args): React.CSSProperties => {
     if (objectFit === 'cover') {
       return { width: 100 + '%', height: 100 + '%' };
     }
@@ -57,7 +57,7 @@ const Picture: FC<PictureProps> = ({
         src={getSrc(imageSizes.md.w, imageSizes.md.h)}
         title={title}
         alt={alt}
-        style={getStyles()}
+        style={{ ...getStyles() }}
       />
     </picture>
   );

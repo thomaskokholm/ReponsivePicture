@@ -10,12 +10,25 @@ export default function App() {
       <Picture
         src="https://via.placeholder.com"
         title="Example placeholder image"
+        objectFit="cover"
         imageSizes={{
           xs: { w: 320, h: 400 },
           sm: { w: 540, h: 300 },
           md: { w: 768, h: 700 },
           lg: { w: 250, h: 250 },
           xl: { w: 900, h: 500 },
+        }}
+      />
+
+      <Picture
+        src="https://via.placeholder.com"
+        title="Example placeholder image"
+        imageSizes={{
+          xs: { w: 420, h: 400 },
+          sm: { w: 540, h: 300 },
+          md: { w: 768, h: 500 },
+          lg: { w: 992, h: 650 },
+          xl: { w: 14400, h: 700 },
         }}
       />
     </div>
