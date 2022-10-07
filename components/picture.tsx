@@ -27,7 +27,7 @@ const Picture: FC<PictureProps> = ({
 
   const getStyles = (...args): React.CSSProperties => {
     if (objectFit === 'cover') {
-      return { width: 100 + '%', height: 100 + '%' };
+      return { width: 100 + '%', height: 100 + '%', objectFit: 'cover' };
     }
     return { maxWidth: 100 + '%', height: 'auto' };
   };
