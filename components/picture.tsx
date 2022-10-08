@@ -22,6 +22,7 @@ const Picture: FC<PictureProps> = ({
   alt = title,
 }): JSX.Element => {
   const getSrc = (width: number, height: number): string => {
+    // Replace return with a cropped image based on your src. You could use Cloudinary or Imgix or your own selfhosted service like https://github.com/thomaskokholm/imgsharp
     return `${src}/${width.toString()}x${height.toString()}.png?text=${width.toString()}x${height.toString()}`;
   };
 
